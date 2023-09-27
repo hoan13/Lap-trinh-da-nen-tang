@@ -3,7 +3,7 @@ import { View, Text,FlatList,Button } from "react-native";
 import React from "react";
 
 const ProfileScreen = ({ navigation, route }) => {
-  
+
   return (
     <View>
       <Text
@@ -45,6 +45,6 @@ const ProfileScreen = ({ navigation, route }) => {
       />
     </View>
   );
-};
+};  
 
 export default ProfileScreen;

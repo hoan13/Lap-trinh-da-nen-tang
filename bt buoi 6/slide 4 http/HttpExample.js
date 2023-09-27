@@ -5,8 +5,8 @@ export class HttpExample extends Component {
   state = {
     data: ''
   }
-  componentDidMount = ()=>{
-    fetch("http:/jsonplaceholder.typicode.com/posts/1", { method: "GET" })
+  componentDidMount = async ()=>{
+    await fetch("http:/jsonplaceholder.typicode.com/posts/1", { method: "GET" })
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson);
